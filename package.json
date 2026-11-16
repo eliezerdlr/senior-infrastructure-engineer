@@ -1,0 +1,41 @@
+{
+  "name": "senior-infrastructure-engineer",
+  "version": "1.2.0",
+  "private": false,
+  "description": "A governed infrastructure engineering agent with selective routing across 28 infrastructure, defensive-security, and authorized offensive-security specialist skills.",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "infrastructure",
+    "devops",
+    "cloud",
+    "operations"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliezerdlr/senior-infrastructure-engineer.git"
+  },
+  "homepage": "https://github.com/eliezerdlr/senior-infrastructure-engineer#readme",
+  "bugs": {
+    "url": "https://github.com/eliezerdlr/senior-infrastructure-engineer/issues"
+  },
+  "engines": {
+    "node": ">=22.14.0",
+    "python": ">=3.11"
+  },
+  "scripts": {
+    "test": "python3 -m unittest discover -s tests -v",
+    "audit": "python3 scripts/security_audit.py --root . --report docs/SECURITY-AUDIT.md",
+    "validate": "npm run test && npm run audit"
+  },
+  "pi": {
+    "skills": [
+      "./skills/**/SKILL.md"
+    ],
+    "prompts": [
+      "./agents/senior-infrastructure-engineer.md"
+    ],
+    "extensions": [],
+    "themes": []
+  }
+}
