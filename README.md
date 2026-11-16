@@ -3,20 +3,38 @@
 **Governed infrastructure engineering across on-premises, cloud, operating systems, containers, automation, networking, observability, security, recovery, virtualization, storage, secrets, and supply-chain risk.**
 
 [![Version](https://img.shields.io/badge/version-1.2.0-2563eb)](package.json)
-[![Specialists](https://img.shields.io/badge/specialists-28-7c3aed)](skills/)
+[![Package](https://img.shields.io/badge/type-agent%20package-0f766e)](agents/senior-infrastructure-engineer.md)
+[![Specialists](https://img.shields.io/badge/specialist%20skills-28-7c3aed)](skills/)
 [![Supervisor](https://img.shields.io/badge/orchestration-selective-0f766e)](docs/ARCHITECTURE.md)
 [![Validation](https://img.shields.io/badge/validation-offline-15803d)](docs/TESTING.md)
 [![License](https://img.shields.io/badge/license-MIT-334155)](LICENSE)
 
-`Senior Infrastructure Engineer` is a public, installable agent package that combines one governing supervisor with 28 infrastructure and security specialists. It is designed for teams that want broad technical coverage without confusing knowledge with permission, or automation with uncontrolled execution.
+`Senior Infrastructure Engineer` is a public, installable **agent package**. It is not a single standalone skill. The package provides one primary agent entrypoint, one governing supervisor skill, and 28 infrastructure and security specialist skills.
 
-The supervisor does **not** invoke every specialist for every task. It selects the smallest relevant set, begins with read-only evidence, reconciles recommendations, and requires explicit approval before privileged, disruptive, destructive, costly, or externally visible actions.
+The agent receives the request and delegates through its supervisor. The supervisor does **not** invoke every specialist for every task. It selects the smallest relevant set, begins with read-only evidence, reconciles recommendations, and requires explicit approval before privileged, disruptive, destructive, costly, or externally visible actions.
+
+## What this repository provides
+
+```text
+Senior Infrastructure Engineer agent package
+├── Agent entrypoint
+│   └── agents/senior-infrastructure-engineer.md
+├── Governing supervisor skill
+│   └── skills/senior-infrastructure-engineer/SKILL.md
+└── 28 specialist skills
+    ├── cloud, systems, networking, automation and observability
+    ├── virtualization, storage, incidents and disaster recovery
+    └── defensive and authorized offensive security
+```
+
+The **agent** is the primary interface. The **supervisor skill** owns classification, routing, authorization gates, evidence synthesis, and final responses. The **specialist skills** provide bounded domain workflows. The host runtime, such as Pi, supplies the model and tools required to execute the package.
 
 ## Executive overview
 
 | Capability | Delivery |
 |---|---|
-| Governed supervisor | One primary entrypoint for classification, routing, evidence, approvals, rollback, and verification |
+| Agent package | One installable primary agent with a governing supervisor and 28 specialist skills |
+| Governed supervisor | Classification, routing, evidence, approvals, rollback, and verification |
 | Specialist portfolio | 28 skills spanning DevOps, cloud, operating systems, Kubernetes, automation, networks, observability, incidents, recovery, virtualization, storage, cloud security, SecOps, threat modeling, source audit, secrets, dependency risk, penetration testing, and red-team simulation |
 | Selective orchestration | Intent-based routing instead of unconditional fan-out |
 | Operational safety | Read-only-first diagnosis, secret-safe handling, change gates, stop conditions, and outcome verification |
