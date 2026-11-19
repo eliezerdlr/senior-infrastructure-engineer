@@ -59,18 +59,18 @@ Installing the package does not grant access to infrastructure and does not auth
 
 | Domain | Specialists |
 |---|---|
-| Request and prompt orchestration | `prompt-orchestrator`, `controlled-technical-english`, `spec-driven-workflow` |
-| Architecture and agent governance | `senior-architect`, `agent-identity-governance`, `agent-workflow-designer`, `automation-governance`, `ai-security` |
-| Software, APIs, tests, and documentation | `api-design-reviewer`, `code-reviewer`, `tdd-guide`, `doc-maintenance`, `release-announcement` |
-| Data and business operations | `database-designer`, `database-reliability`, `finops-operating-model`, `email-lifecycle-strategy` |
-| Engineering and automation | `senior-devops`, `terraform-engineer`, `ansible`, `runbook-generator` |
-| Cloud architecture | `aws-solution-architect`, `azure-cloud-architect`, `gcp-cloud-architect` |
-| Operating systems and containers | `linux-administration`, `windows-server`, `kubernetes-ops` |
-| Network operations | `network-interface-health`, `network-config-validation` |
-| Reliability and recovery | `incident-response`, `dsh-error-handling`, `observability-designer`, `slo-architect`, `disaster-recovery` |
-| Defensive security | `cloud-security`, `senior-secops`, `senior-security`, `security-audit`, `env-secrets-manager`, `dependency-auditor` |
-| Authorized offensive security | `security-pen-testing`, `red-team` |
-| Virtualization and storage | `vmware-engineer`, `hyper-v`, `pure-storage`, `storage-spaces-direct` |
+| Request and prompt orchestration | [prompt-orchestrator](skills/prompt-orchestrator/SKILL.md), [controlled-technical-english](skills/controlled-technical-english/SKILL.md), [spec-driven-workflow](skills/spec-driven-workflow/SKILL.md) |
+| Architecture and agent governance | [senior-architect](skills/senior-architect/SKILL.md), [agent-identity-governance](skills/agent-identity-governance/SKILL.md), [agent-workflow-designer](skills/agent-workflow-designer/SKILL.md), [automation-governance](skills/automation-governance/SKILL.md), [ai-security](skills/ai-security/SKILL.md) |
+| Software, APIs, tests, and documentation | [api-design-reviewer](skills/api-design-reviewer/SKILL.md), [code-reviewer](skills/code-reviewer/SKILL.md), [tdd-guide](skills/tdd-guide/SKILL.md), [doc-maintenance](skills/doc-maintenance/SKILL.md), [release-announcement](skills/release-announcement/SKILL.md) |
+| Data and business operations | [database-designer](skills/database-designer/SKILL.md), [database-reliability](skills/database-reliability/SKILL.md), [finops-operating-model](skills/finops-operating-model/SKILL.md), [email-lifecycle-strategy](skills/email-lifecycle-strategy/SKILL.md) |
+| Engineering and automation | [senior-devops](skills/senior-devops/SKILL.md), [terraform-engineer](skills/terraform-engineer/SKILL.md), [ansible](skills/ansible/SKILL.md), [runbook-generator](skills/runbook-generator/SKILL.md) |
+| Cloud architecture | [aws-solution-architect](skills/aws-solution-architect/SKILL.md), [azure-cloud-architect](skills/azure-cloud-architect/SKILL.md), [gcp-cloud-architect](skills/gcp-cloud-architect/SKILL.md) |
+| Operating systems and containers | [linux-administration](skills/linux-administration/SKILL.md), [windows-server](skills/windows-server/SKILL.md), [kubernetes-ops](skills/kubernetes-ops/SKILL.md) |
+| Network operations | [network-interface-health](skills/network-interface-health/SKILL.md), [network-config-validation](skills/network-config-validation/SKILL.md) |
+| Reliability and recovery | [incident-response](skills/incident-response/SKILL.md), [dsh-error-handling](skills/dsh-error-handling/SKILL.md), [observability-designer](skills/observability-designer/SKILL.md), [slo-architect](skills/slo-architect/SKILL.md), [disaster-recovery](skills/disaster-recovery/SKILL.md) |
+| Defensive security | [cloud-security](skills/cloud-security/SKILL.md), [senior-secops](skills/senior-secops/SKILL.md), [senior-security](skills/senior-security/SKILL.md), [security-audit](skills/security-audit/SKILL.md), [env-secrets-manager](skills/env-secrets-manager/SKILL.md), [dependency-auditor](skills/dependency-auditor/SKILL.md) |
+| Authorized offensive security | [security-pen-testing](skills/security-pen-testing/SKILL.md), [red-team](skills/red-team/SKILL.md) |
+| Virtualization and storage | [vmware-engineer](skills/vmware-engineer/SKILL.md), [hyper-v](skills/hyper-v/SKILL.md), [pure-storage](skills/pure-storage/SKILL.md), [storage-spaces-direct](skills/storage-spaces-direct/SKILL.md) |
 
 See [routing](skills/senior-infrastructure-engineer/references/routing.md) for selection rules.
 

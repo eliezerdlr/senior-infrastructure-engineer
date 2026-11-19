@@ -61,6 +61,15 @@ class PackageTests(unittest.TestCase):
         }
         self.assertEqual(found, EXPECTED)
 
+    def test_readme_links_every_specialist_to_its_local_skill(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        for name in EXPECTED:
+            self.assertIn(
+                f"[{name}](skills/{name}/SKILL.md)",
+                readme,
+                name,
+            )
+
     def test_skill_names_are_unique_and_match_directories(self):
         seen = set()
         for path in SKILLS.rglob("SKILL.md"):
