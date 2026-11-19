@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "scope": "Skills authored and maintained in this repository; not copied from the pinned upstream skill collection.",
+  "skills": [
+    {
+      "name": "prompt-orchestrator",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "4a4128697500a47019a8edd4fa98b2cfbe8ec5d192d2e774ab12a8e0dc222577"
+        }
+      ]
+    }
+  ]
+}

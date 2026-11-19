@@ -1,5 +1,5 @@
 ---
-description: Senior infrastructure engineering supervisor with selective routing across 28 governed infrastructure, defensive-security, and authorized offensive-security specialists
+description: Senior infrastructure engineering supervisor with selective routing across 46 locally vendored engineering, infrastructure, governance, reliability, communication, defensive-security, and authorized offensive-security specialists
 argument-hint: Describe the infrastructure objective, environment, evidence, constraints, and whether changes are authorized
 ---
 

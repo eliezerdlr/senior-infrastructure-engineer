@@ -12,6 +12,22 @@ Selected skills are included as complete local copies and include MIT-licensed m
 
 The selected paths are: `senior-devops`, `aws-solution-architect`, `azure-cloud-architect`, `gcp-cloud-architect`, `incident-response`, `observability-designer`, `runbook-generator`, `network-interface-health`, `network-config-validation`, `dsh-error-handling`, `cloud-security`, `senior-secops`, `senior-security`, `env-secrets-manager`, `dependency-auditor`, `red-team`, and `security-pen-testing`.
 
+## Vendored agents-skills collection
+
+Collection source: https://github.com/eliezerdlr/agents-skills. The 22 selected upstream skills are byte-pinned by `provenance/agents-skills/skills.json` to their original `devops-skills` source commit `d59835fec2b1b85224c639f4ff1ef2e05586d1c5`. The repository-authored `prompt-orchestrator` is synchronized from `agents-skills` commit `0e56ff1e3a591948ddeff68433a1646a262010bb`.
+
+All 23 selected skills and every supporting file declared by their manifests are stored locally. Runtime operation does not read or fetch the source repository. The collection contains:
+
+- `agent-identity-governance`, `agent-workflow-designer`, `ai-security`, `api-design-reviewer`, `automation-governance`
+- `cloud-security`, `code-reviewer`, `controlled-technical-english`, `database-designer`, `database-reliability`
+- `dependency-auditor`, `doc-maintenance`, `email-lifecycle-strategy`, `env-secrets-manager`, `finops-operating-model`
+- `observability-designer`, `prompt-orchestrator`, `release-announcement`, `senior-architect`, `senior-security`
+- `slo-architect`, `spec-driven-workflow`, `tdd-guide`
+
+The 22 upstream-selected skills remain byte-verifiable against `provenance/agents-skills/skills.json`. The repository-authored `prompt-orchestrator` remains byte-verifiable against `provenance/agents-skills/authored-skills.json`. Local tests verify every declared SHA-256 digest.
+
+Applicable MIT licence texts are preserved at `licenses/devops-skills-MIT.txt`, `licenses/agency-agents-MIT.txt`, and `licenses/agency-agents-adaptations-MIT.txt`. Upstream notices and adaptation records are preserved under `provenance/agents-skills/`. `skills/prompt-orchestrator/LICENSE` and `skills/prompt-orchestrator/PROVENANCE.md` additionally record its project-level origin.
+
 ## Cloudflare security-audit adaptation
 
 Upstream source: [Cloudflare security-audit-skill](https://github.com/cloudflare/security-audit-skill), with a local Pi-compatible adaptation included directly in this repository.

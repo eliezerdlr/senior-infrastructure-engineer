@@ -1,8 +1,8 @@
 {
   "name": "senior-infrastructure-engineer",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "private": false,
-  "description": "A governed infrastructure engineering agent with selective routing across 28 infrastructure, defensive-security, and authorized offensive-security specialist skills.",
+  "description": "A governed infrastructure engineering agent with selective routing across 46 locally vendored engineering, infrastructure, governance, reliability, communication, defensive-security, and authorized offensive-security specialist skills.",
   "license": "MIT",
   "keywords": [
     "pi-package",

@@ -1,5 +1,8 @@
+import hashlib
+import importlib.util
 import json
 import re
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -7,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ROOT / "skills"
 ADAPTED = {
     "terraform-engineer", "vmware-engineer", "hyper-v", "pure-storage",
-    "storage-spaces-direct", "disaster-recovery",
+    "storage-spaces-direct", "disaster-recovery", "prompt-orchestrator",
 }
 
 EXPECTED = {
@@ -20,6 +23,13 @@ EXPECTED = {
     "storage-spaces-direct", "cloud-security", "senior-secops",
     "senior-security", "security-audit", "env-secrets-manager",
     "dependency-auditor", "red-team", "security-pen-testing",
+    "prompt-orchestrator", "agent-identity-governance",
+    "agent-workflow-designer", "ai-security", "api-design-reviewer",
+    "automation-governance", "code-reviewer", "controlled-technical-english",
+    "database-designer", "database-reliability", "doc-maintenance",
+    "email-lifecycle-strategy", "finops-operating-model",
+    "release-announcement", "senior-architect", "slo-architect",
+    "spec-driven-workflow", "tdd-guide",
 }
 
 
@@ -84,6 +94,13 @@ class PackageTests(unittest.TestCase):
             "CONTRIBUTING.md", "docs/ARCHITECTURE.md", "docs/TESTING.md",
             "licenses/engineering-skills-MIT.txt", "licenses/bagelhole-MIT.txt",
             "licenses/openfang-APACHE-2.0.txt",
+            "licenses/devops-skills-MIT.txt",
+            "licenses/agency-agents-MIT.txt",
+            "licenses/agency-agents-adaptations-MIT.txt",
+            "provenance/agents-skills/skills.json",
+            "provenance/agents-skills/authored-skills.json",
+            "provenance/agents-skills/devops-skills-THIRD_PARTY_NOTICES.md",
+            "provenance/agents-skills/agency-agents-adaptations-UPSTREAM.json",
         ]:
             self.assertTrue((ROOT / name).is_file(), name)
 
@@ -94,6 +111,22 @@ class PackageTests(unittest.TestCase):
             self.assertTrue((directory / "LICENSE").is_file(), name)
             self.assertTrue((directory / "PROVENANCE.md").is_file(), name)
             self.assertIn(f"`{name}`", notices)
+
+    def test_agents_skills_are_complete_local_copies(self):
+        provenance = ROOT / "provenance" / "agents-skills"
+        manifests = [
+            json.loads((provenance / "skills.json").read_text(encoding="utf-8")),
+            json.loads((provenance / "authored-skills.json").read_text(encoding="utf-8")),
+        ]
+        for manifest in manifests:
+            for skill in manifest["skills"]:
+                directory = SKILLS / skill["name"]
+                self.assertTrue(directory.is_dir(), skill["name"])
+                for item in skill["files"]:
+                    path = directory / item["path"]
+                    self.assertTrue(path.is_file(), str(path.relative_to(ROOT)))
+                    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+                    self.assertEqual(digest, item["sha256"], str(path.relative_to(ROOT)))
 
     def test_security_audit_is_self_contained_without_duplicate_skill(self):
         directory = SKILLS / "security-audit"
@@ -120,6 +153,27 @@ class PackageTests(unittest.TestCase):
         content = "\n".join(path.read_text(encoding="utf-8") for path in targets)
         for marker in forbidden:
             self.assertNotIn(marker, content)
+
+    def test_security_audit_allows_only_exact_synthetic_fixture_values(self):
+        audit_path = ROOT / "scripts" / "security_audit.py"
+        spec = importlib.util.spec_from_file_location("security_audit", audit_path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        module.repository_policy_findings = lambda _root: []
+
+        relative = Path("skills/api-design-reviewer/references/rest_design_rules.md")
+        known = "Authorization: " + "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        unexpected = "Authorization: " + "Bearer " + "A" * 32
+        with tempfile.TemporaryDirectory() as temporary:
+            fixture = Path(temporary) / relative
+            fixture.parent.mkdir(parents=True)
+            fixture.write_text(known, encoding="utf-8")
+            _, critical, _ = module.audit(Path(temporary))
+            self.assertEqual(critical, [])
+
+            fixture.write_text(f"{known}\n{unexpected}\n", encoding="utf-8")
+            _, critical, _ = module.audit(Path(temporary))
+            self.assertIn((relative, "generic bearer token"), critical)
 
     def test_no_private_workspace_paths_or_key_material(self):
         private_patterns = ["/" + "Users/", "ero" + "drigues"]

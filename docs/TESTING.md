@@ -8,11 +8,12 @@ npm run validate
 
 It checks:
 
-- the 28-specialist inventory and supervisor;
+- the 46-specialist inventory and supervisor;
+- SHA-256 integrity of every file declared by the vendored `agents-skills` manifests;
 - unique names and required frontmatter;
 - package registration;
 - routing coverage;
-- licence/provenance presence;
+- local licence/provenance presence without runtime catalogue dependencies;
 - common secret patterns and forbidden private artifacts;
 - risky operational language that requires review.
 

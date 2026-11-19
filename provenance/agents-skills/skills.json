@@ -1,0 +1,765 @@
+{
+  "repository": "https://github.com/eliezerdlr/devops-skills",
+  "commit": "d59835fec2b1b85224c639f4ff1ef2e05586d1c5",
+  "licenseFile": "licenses/devops-skills-MIT.txt",
+  "noticeFile": "provenance/devops-skills-THIRD_PARTY_NOTICES.md",
+  "selectionPolicy": "Generic security, architecture, governance, engineering and documentation guidance only; no connectors, services, credentials or environment-specific runtimes.",
+  "skills": [
+    {
+      "name": "agent-identity-governance",
+      "sourcePath": "skills/engineering-skills/agent-identity-governance",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "8f6a07884376c6fa5df35531a2adb43c796e1c2926c0f8ea56c278c88a53cfb1"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "2fae56dac198dcb72a75a9daadf992faf9a30951b8cadab3c658d3a394a60abd"
+        },
+        {
+          "path": "references/control-matrix.md",
+          "sha256": "d56375a82ec631f1b52914b62e39b6bd6c29d7af711f9ea73f36d79285630309"
+        },
+        {
+          "path": "references/entra-integration.md",
+          "sha256": "e3c1b1990dbfe838f38c94081dec2dd78c6d328a68f2a53df21024de62039db7"
+        }
+      ]
+    },
+    {
+      "name": "agent-workflow-designer",
+      "sourcePath": "skills/engineering-skills/agent-workflow-designer",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "f1133218f4bc98e1aed526f2e2a60b30c02b6dac18c717a04eac45551242a9dd"
+        },
+        {
+          "path": "references/workflow-patterns.md",
+          "sha256": "22a047a3dd5385b0409278c75427a3e7c01c577201c3b37d52289804343bfa78"
+        },
+        {
+          "path": "scripts/workflow_scaffolder.py",
+          "sha256": "081985aef78ba0eebe3f03b7e70ee50dfbbd57e2113a4d90736f887593816bbf"
+        }
+      ]
+    },
+    {
+      "name": "ai-security",
+      "sourcePath": "skills/engineering-skills/ai-security",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "dac7c1312e5433e02fb287ca476979468d9a21901ed0d0fd67a64a8239ac6287"
+        },
+        {
+          "path": "references/atlas-coverage.md",
+          "sha256": "3807ef4d5d03137aa0cacba9c3ccfc880b80ab2f6824e2bddaf126367719e24f"
+        },
+        {
+          "path": "scripts/ai_threat_scanner.py",
+          "sha256": "8daccd1d8ffc35d8b6d18acffee5c7b3f80bdb3e7145c07ea9fed76312d43473"
+        }
+      ]
+    },
+    {
+      "name": "api-design-reviewer",
+      "sourcePath": "skills/engineering-skills/api-design-reviewer",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a4e61a67981d7cab02f479f959b9e83d032e705c17b72e763d07ef9a3247bf54"
+        },
+        {
+          "path": "references/api_antipatterns.md",
+          "sha256": "60901c132668746265cc74779ad36b9faf8fa3fe11787a68fa6e128a159d38a9"
+        },
+        {
+          "path": "references/rest_design_rules.md",
+          "sha256": "a69236c8fa395100146c74255f3e43101021b7730acfeb03aa17872d02b05bb2"
+        },
+        {
+          "path": "scripts/api_linter.py",
+          "sha256": "9acfecc26859e54be84a564fc4edefc552556c83e52f9228cc4b8282f9f617f8"
+        },
+        {
+          "path": "scripts/api_scorecard.py",
+          "sha256": "a0df19fcdb7d4c137d75800d05475f47cf4fede77f33ae21bddda97c8efed302"
+        },
+        {
+          "path": "scripts/breaking_change_detector.py",
+          "sha256": "068d4bc0fdab0009f4140baa19e02bd4e255a9ab39c6704f8e7e73c7a550b3fd"
+        }
+      ]
+    },
+    {
+      "name": "automation-governance",
+      "sourcePath": "integrations/agency-agents/skills/automation-governance",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e1f22231348515df6790bab76ff7731855c2cb5bb585ef5d2d4290ac13dc5898"
+        }
+      ]
+    },
+    {
+      "name": "cloud-security",
+      "sourcePath": "skills/engineering-skills/cloud-security",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "b21c8b13654e421a65784430df2c6bba90bddfdae87fe5000d4bae0c3cd1a7c5"
+        },
+        {
+          "path": "references/cspm-checks.md",
+          "sha256": "8f20efed46ce966fd97e17fc0fe046c731a9e5a4122510b151eda335364401e6"
+        },
+        {
+          "path": "scripts/cloud_posture_check.py",
+          "sha256": "81b1c5adc7083c0ffc1574e966441d8a0fe4434a3859a8bf667c9b6746376096"
+        }
+      ]
+    },
+    {
+      "name": "code-reviewer",
+      "sourcePath": "skills/engineering-skills/code-reviewer",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "163d8d0b9c9a9e5fbe53e25ba61b62b024f694d3d2e25c1fb94ed7c4d6e90141"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "40f9ae860a013cd5e3c75e8749fc4c22b954e234de5c68bd36638bb1f10973d3"
+        },
+        {
+          "path": "assets/sample_c_clean.c",
+          "sha256": "91d56e3ca00b3d040624959668e6ecd33da7210f4121ccf52474f475550ad2cc"
+        },
+        {
+          "path": "assets/sample_c_smells.c",
+          "sha256": "d60348afd0583a9aede1c44d3691ef7750a2cee368c4e4b3f5a990054801ddb8"
+        },
+        {
+          "path": "assets/sample_csharp_clean.cs",
+          "sha256": "edd9640c78799d9049eb411fdd2c0aec2ace9b0cef081b182ef575c6bca6b3b8"
+        },
+        {
+          "path": "assets/sample_csharp_smells.cs",
+          "sha256": "fcd6f23f19161fe9b01cbf873f54ff5a707b0d880a9613aaeeb8a66fe5bf1246"
+        },
+        {
+          "path": "assets/sample_java_clean.java",
+          "sha256": "be92e0e66838f45147cc8eb84560dcd97ef4ee47778812c1f4b35e19c7cb0e8c"
+        },
+        {
+          "path": "assets/sample_java_smells.java",
+          "sha256": "0dbce2abf86d836a19d18392cc365967e401a116a6263b7337988875ec45bcdf"
+        },
+        {
+          "path": "expected_outputs/sample_c_clean_quality.json",
+          "sha256": "7050355e4454aec64c739964b55fd64bed04b4b80517358095b09d7adf93039e"
+        },
+        {
+          "path": "expected_outputs/sample_c_smells_quality.json",
+          "sha256": "c87955b7cbf4b97f5d829d9d7b415225860644fdcb65a02705a2cb2aaa1cf0a2"
+        },
+        {
+          "path": "expected_outputs/sample_csharp_clean_quality.json",
+          "sha256": "d97f5bc6fbf4c99bfea0c208c9f9ce87ab1153092b7bc009e624d16b0ae7280d"
+        },
+        {
+          "path": "expected_outputs/sample_csharp_smells_quality.json",
+          "sha256": "1e082d4d59e84bac942a62be91e089b67741b186ef13ce3c136f70af7b086a44"
+        },
+        {
+          "path": "expected_outputs/sample_java_clean_quality.json",
+          "sha256": "58ed092769a44c72139454a56385759268979f7a4c331e6f9c2b5f75d5410f0a"
+        },
+        {
+          "path": "expected_outputs/sample_java_smells_quality.json",
+          "sha256": "5dfdea086f6be71633a47c71f12fce51c021098cd84683515469008dce22dccb"
+        },
+        {
+          "path": "languages/c.md",
+          "sha256": "0ef5fb582026e9ee4d94387b3aac3dafd6d7e83707e4d7d0b3c9b3faf4710e75"
+        },
+        {
+          "path": "languages/cpp.md",
+          "sha256": "5cd06cbdb55a53b699b0e5c49d0e7de63592f6199dcb6640e7f22347c6c17b5d"
+        },
+        {
+          "path": "languages/csharp.md",
+          "sha256": "da500be2edaf7c1b0304708d94d49fd61bfb3c7e97610501cfe0fcd17800f5cc"
+        },
+        {
+          "path": "languages/dart.md",
+          "sha256": "531bde4c4912b307c0756847a696b484d6bf33ae52fc18cec1da09ba99c7a4b7"
+        },
+        {
+          "path": "languages/go.md",
+          "sha256": "58c1c8c79c3e20d8af9c9ee9f98d19eb093a0ac1dbfd43a32293f37023a2159f"
+        },
+        {
+          "path": "languages/java.md",
+          "sha256": "660fdd99556c3bad10c41b8491724db21002cc3bf84b1b956fbfbaf9f2c638b6"
+        },
+        {
+          "path": "languages/kotlin.md",
+          "sha256": "f41e22a9349e99cca742a68f5ecec2c49f2875381d1cabd1b529b5060f022490"
+        },
+        {
+          "path": "languages/php.md",
+          "sha256": "2d11f8a03374577c3f5dece75a5fde845cb90cb720a57d141bd905f5ac1356cd"
+        },
+        {
+          "path": "languages/python.md",
+          "sha256": "0e5433e03bca59e31482b44c844f7b04fd8ec392b76920bb4e73b0aa9d66973a"
+        },
+        {
+          "path": "languages/ruby.md",
+          "sha256": "854daa731b3355636ae8c0a21269f4d96f334eb8ff41a6f7de183c57533060d7"
+        },
+        {
+          "path": "languages/rust.md",
+          "sha256": "ae2d67df41e321534808d2fc72a1f063f7d3d23601ed871ffdfe069ab2f61841"
+        },
+        {
+          "path": "languages/swift.md",
+          "sha256": "bbbe37806511bd9ebaad0a9b747fc6519e63905d02e1e193140cd8e79a5cfa0a"
+        },
+        {
+          "path": "languages/typescript.md",
+          "sha256": "657f2e21bd8bc05dff64ed7b30589ddffed207e064fc503a50595cdf330dee78"
+        },
+        {
+          "path": "rules/universal.md",
+          "sha256": "f6d292c24a6bb81dac9c6a628e50bbe508a6417068823e53d052d90073a1d748"
+        },
+        {
+          "path": "scripts/code_quality_checker.py",
+          "sha256": "df2f1be10fb9a0d8f7ab888e548897d6fd280b755136d38a0c9efc96eb07beb8"
+        },
+        {
+          "path": "scripts/pr_analyzer.py",
+          "sha256": "415b52a325901df8da716600dd7cb73f0b391641a07cbdc84f5b94caf9257fcd"
+        },
+        {
+          "path": "scripts/review_report_generator.py",
+          "sha256": "03066552fbc41a1d28448c4199204beba328a0e5b26298e87e61e43c672949e5"
+        }
+      ]
+    },
+    {
+      "name": "controlled-technical-english",
+      "sourcePath": "skills/engineering-skills/controlled-technical-english",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "38a0aa433dec4b9952fd59313b8d8850509971a6f18adcaa2b3532ccc06abe23"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "226f28bdf711e2022b4d9f3867a403ee9d005c8b79b0d74d08f4024f8267cd15"
+        }
+      ]
+    },
+    {
+      "name": "database-designer",
+      "sourcePath": "skills/engineering-skills/database-designer",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "18264cfce2a0cf29a83902a64909944eac6a6d3ae50d6366f307a6fd97c0bbb5"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "3729790a4e29e45ea0e9cb0bbb220d2162fea0e954d32f2abf8728aa8ef41ad1"
+        },
+        {
+          "path": "assets/sample_query_patterns.json",
+          "sha256": "de9d9fe65e8f8ff9aeac7f055d475e5b742999081caaf50ffdd3ff88aab98d4b"
+        },
+        {
+          "path": "assets/sample_schema.json",
+          "sha256": "006d510d7807dc1cf7a23710fcfe4b0cf0f6f37a7fafb559e79f91d6c56ed177"
+        },
+        {
+          "path": "assets/sample_schema.sql",
+          "sha256": "8dfa99c27922537d64243a9dfddcee996d29f1c4d4ef23ce21db6f631bf828d5"
+        },
+        {
+          "path": "expected_outputs/index_optimization_sample.txt",
+          "sha256": "a31ac7a8eaccc2b1db5701ec025304b12ea5dc82e81df25eb662ccbc0cc48f67"
+        },
+        {
+          "path": "expected_outputs/migration_sample.txt",
+          "sha256": "bb34e3bf0728810756a184c0f1bd4e1ad61ee5adda2efcbce668f6d1dcadeee9"
+        },
+        {
+          "path": "expected_outputs/schema_analysis_sample.txt",
+          "sha256": "97335e832292f3687d9e0f576eee50e8b55dc184376cd457ae56578c4802c987"
+        },
+        {
+          "path": "index_optimizer.py",
+          "sha256": "0c73e6724d02eae6d48a9dd2a626e06e7d551a3fcae3ab5f13a044384b2db485"
+        },
+        {
+          "path": "migration_generator.py",
+          "sha256": "420e49cc56fd5a3b1d9ad5983462f539389548dc885142fa0c0b596a44b3ec92"
+        },
+        {
+          "path": "references/database-design-reference.md",
+          "sha256": "b189de7137b7a1acd9408f3324ca5fa0e1a1bbdc53bf82f2eeda0911239f0370"
+        },
+        {
+          "path": "references/database_selection_decision_tree.md",
+          "sha256": "18d1a914c6097e6e7e8fd38da4e5847c24191e24063efb3d39f83526079f20ee"
+        },
+        {
+          "path": "references/index_strategy_patterns.md",
+          "sha256": "8d85e83b63c7977ac1cbfd70b2d42ac6fbdbfbeb9219d1dee98f0fafdafaabe8"
+        },
+        {
+          "path": "references/normalization_guide.md",
+          "sha256": "30f05dfb9c474203c3377cbd7814f2d61971bde0bbad0807c332ddf2d27a4c30"
+        },
+        {
+          "path": "schema_analyzer.py",
+          "sha256": "4c44912b055045f278c938e6dc90f8559bded16cf6dfa066860d66a3a7a42e42"
+        }
+      ]
+    },
+    {
+      "name": "database-reliability",
+      "sourcePath": "integrations/agency-agents/skills/database-reliability",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "1e4b9197c8a10625ef76991be7b61e0b343bcc51c1666a980676147060183f14"
+        }
+      ]
+    },
+    {
+      "name": "dependency-auditor",
+      "sourcePath": "skills/engineering-skills/dependency-auditor",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "023b2506b44dd23c791664e91f1836f9795450333565762cf86267adee8cddbb"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "fa04d148680ffd0f78762b9c487d04471e8d5308da979a0c46378ea2337408b7"
+        },
+        {
+          "path": "assets/sample_go.mod",
+          "sha256": "3da5b13abe39db65446c64bfef8aa7e5216b317f0853e17a3c575382044fc676"
+        },
+        {
+          "path": "assets/sample_package.json",
+          "sha256": "0ba6fc01364589a5e6030a05e1283038bf3a944135b46a9a5eaaaf1dbdf6a032"
+        },
+        {
+          "path": "assets/sample_requirements.txt",
+          "sha256": "85ee24f99830b71a59419a181efa52e4f6f5ace9ad92e30d2fb6489d21bb0198"
+        },
+        {
+          "path": "expected_outputs/sample_license_report.txt",
+          "sha256": "96d4d67bd77d9f0941f9334a563c94cc25557001aa96d390103878c2903b126a"
+        },
+        {
+          "path": "expected_outputs/sample_upgrade_plan.txt",
+          "sha256": "13cab41ede802c9fe49eb894e86c6ad6a9ced164a64f16a2fff62c2884fd545c"
+        },
+        {
+          "path": "expected_outputs/sample_vulnerability_report.json",
+          "sha256": "795d7e23d4c5b56c30051371a1ca8f0ab72496f65c0e554e21d3211ca4dca8a4"
+        },
+        {
+          "path": "references/dependency_management_best_practices.md",
+          "sha256": "2eafa69105d7c31bf50b693af656d4181250e241ea110eeba7227ecb29e24f90"
+        },
+        {
+          "path": "references/license_compatibility_matrix.md",
+          "sha256": "9432a2776985d38f5668e5acfa95754e8695d96bfbea01159e1b7d60da6b6035"
+        },
+        {
+          "path": "references/vulnerability_assessment_guide.md",
+          "sha256": "5e4743618d544cc5903f67572c71aff31180c8f9222c8cfbd4782d7305d482bb"
+        },
+        {
+          "path": "scripts/dep_scanner.py",
+          "sha256": "eab6b57db4e1535f1820b2451f90b801417b2cea50a350175b1dd5e243ad2a4b"
+        },
+        {
+          "path": "scripts/license_checker.py",
+          "sha256": "7fa7b6d19cc8de7d38850c24d1c8970fafac9df6bd4f44f883056745bd410dc8"
+        },
+        {
+          "path": "scripts/upgrade_planner.py",
+          "sha256": "276233c473bf35024fb51c4da5bc396c4a688a6fab4299218b36198a5a9d0d51"
+        },
+        {
+          "path": "test-inventory.json",
+          "sha256": "9eb7db72e3c66d324efe411b11f702ebedd42ac8fa89ffe7ead338b902450fd3"
+        },
+        {
+          "path": "test-project/package.json",
+          "sha256": "0ba6fc01364589a5e6030a05e1283038bf3a944135b46a9a5eaaaf1dbdf6a032"
+        }
+      ]
+    },
+    {
+      "name": "doc-maintenance",
+      "sourcePath": "skills/engineering-skills/doc-maintenance",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "5ed03d6d4b909c97fdce71246204ce15aacc7f3d78a6acf9fdf032d0c485c9ff"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "afa1c74e82826e13e24ceebacc0bcccff9bd61fb4a750c3447f85b683fa75172"
+        }
+      ]
+    },
+    {
+      "name": "email-lifecycle-strategy",
+      "sourcePath": "integrations/agency-agents/skills/email-lifecycle-strategy",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "18b0acd4e22ad310c0907a9a2afa203d9fcbe45f3489e197e1ac70935ca699ee"
+        }
+      ]
+    },
+    {
+      "name": "env-secrets-manager",
+      "sourcePath": "skills/engineering-skills/env-secrets-manager",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "6724d5bd32506212977fe6e78be754d97458e16ae164fbc6adb69e30d31caaee"
+        },
+        {
+          "path": "references/secret-patterns.md",
+          "sha256": "9472390042a7f9bdb9e723b01592e9d2ac5241974281f4249a19c68efce69254"
+        },
+        {
+          "path": "references/validation-detection-rotation.md",
+          "sha256": "5f71dff7ae1b479b49a1335dc1999e45484c05672c35b47af75b258296132b6a"
+        },
+        {
+          "path": "scripts/env_auditor.py",
+          "sha256": "679d1435a809e9c9572e97d310daef1e4cd8aeeea19278c348ca71ec01a27802"
+        }
+      ]
+    },
+    {
+      "name": "finops-operating-model",
+      "sourcePath": "integrations/agency-agents/skills/finops-operating-model",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "e5a249359e84e19d67613db8768ef04438c87ef926df8c5e4952a1505d0afbb0"
+        }
+      ]
+    },
+    {
+      "name": "observability-designer",
+      "sourcePath": "skills/engineering-skills/observability-designer",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "3f8de7f4215e895d48af660bc964f301315e38f9463014b2bd72f3a63283d422"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "70ab54164e3cb58f30f4f4e1500bd54361c67f6ecbde954b13596dc2902fe2ac"
+        },
+        {
+          "path": "assets/sample_alerts.json",
+          "sha256": "0426a8d9e2624d6f991b336473129c80994fc3f08396f9379b418c78b6698314"
+        },
+        {
+          "path": "assets/sample_service_api.json",
+          "sha256": "3385253b70d962f096651d43081449b0789ad6091c78c12902db3f3326b3cf96"
+        },
+        {
+          "path": "assets/sample_service_web.json",
+          "sha256": "75a72079afcde60b93dc79bfb9a38803002289d17112dec26ffb4e516f31ecc8"
+        },
+        {
+          "path": "expected_outputs/sample_dashboard.json",
+          "sha256": "6ab204632adc8e20fa940d15d7e1220077aa2aa9d168ceae26fb80c43176071b"
+        },
+        {
+          "path": "expected_outputs/sample_slo_framework.json",
+          "sha256": "b090ae487fadb65f5040675e88ca2dfbaab7772cc8e43eafac7b8a80be961405"
+        },
+        {
+          "path": "references/alert_design_patterns.md",
+          "sha256": "257b29ca6bf9acc7535d1222e7ffd1455710a34862e1a75e19943473672d6382"
+        },
+        {
+          "path": "references/dashboard_best_practices.md",
+          "sha256": "b9215f45b7fe10912532e4302ed960e4554d85678ca0a7603ef7c8a06b6726d6"
+        },
+        {
+          "path": "references/slo_cookbook.md",
+          "sha256": "6fca3afda3ba7f0dcf1e3184ccf6f1f01e938d59deca7ba873a7540a099efa77"
+        },
+        {
+          "path": "scripts/alert_optimizer.py",
+          "sha256": "d2d5b3ae98906c0df1a7868f4c058dc0341a3341437e1c5f0d69f942e5b75f70"
+        },
+        {
+          "path": "scripts/dashboard_generator.py",
+          "sha256": "7886f4f797e00a7e008d252ac802edc558b3adaaec3a7834e2d1b8f3a5045cd5"
+        },
+        {
+          "path": "scripts/slo_designer.py",
+          "sha256": "724e7c97db3b0f466219a92401a65189b1a4d43fe9aaf49cc51260e3f7929a12"
+        }
+      ]
+    },
+    {
+      "name": "release-announcement",
+      "sourcePath": "skills/engineering-skills/release-announcement",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "900ca28e391998699d1e1879544dcfe6c71fdf8d4f5a77ac5d84fc190fb4c00b"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "10ebadfed196d90f4fdffb4ac85d16cdf44a6a3149d848ed567e390f9d0a4840"
+        }
+      ]
+    },
+    {
+      "name": "senior-architect",
+      "sourcePath": "skills/engineering-skills/senior-architect",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "559d402c361591423b22de37485ad3900b3aba8c437bed1ebf70aa4e828e0e22"
+        },
+        {
+          "path": "references/architecture_patterns.md",
+          "sha256": "29f2f8549551551da428181a3e728df6fb076f52760b6f82236b8b9ed7292ded"
+        },
+        {
+          "path": "references/system_design_workflows.md",
+          "sha256": "aa88778dd7ef7a18eb71943310c348b97bf044cbd62bc7251941c8716feae260"
+        },
+        {
+          "path": "references/tech_decision_guide.md",
+          "sha256": "a6a322d7199aa534640d0ede61431fce0e8232a4bd19a3d9a93c30920b58d51f"
+        },
+        {
+          "path": "scripts/architecture_diagram_generator.py",
+          "sha256": "53b8b0c24065f34b4f21ce15eaf551679670bf5d9e4f4d201c3253e0fabd7b2b"
+        },
+        {
+          "path": "scripts/dependency_analyzer.py",
+          "sha256": "bce84d2dd0a2b6d6034356f01c30ee5fec51a1fa13e7c617bde53eb1d61c2145"
+        },
+        {
+          "path": "scripts/project_architect.py",
+          "sha256": "f421cd71f7ee790e292c44a29656b9b3f38bc93126a894e2faf2fed6f8aa1aab"
+        }
+      ]
+    },
+    {
+      "name": "senior-security",
+      "sourcePath": "skills/engineering-skills/senior-security",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "454188e4f0188d3e0219f58c70dc666e0a9e98383d53a7437a027b13db68643a"
+        },
+        {
+          "path": "references/cryptography-implementation.md",
+          "sha256": "f9389c5d8cfb4fe80b1a2c1cedc5d9daa5da89c2ccf1dfe85b74e300f6f61657"
+        },
+        {
+          "path": "references/security-architecture-patterns.md",
+          "sha256": "58afe30843a9363f20dc7908b456b37e2027504336dc627d2ab952789c34f32b"
+        },
+        {
+          "path": "references/threat-modeling-guide.md",
+          "sha256": "6962830a72d9094772434b70956a8a8191f0e11e4c88321a2f783479b87c429b"
+        },
+        {
+          "path": "scripts/secret_scanner.py",
+          "sha256": "cf8550a30b109ea624ac0b95282d915df386d53c69ac552d507a923e7a0232fd"
+        },
+        {
+          "path": "scripts/threat_modeler.py",
+          "sha256": "4f135ff662f63f12953657c306413134ce764d1ad73029b211ffc4704ae0d0c8"
+        }
+      ]
+    },
+    {
+      "name": "slo-architect",
+      "sourcePath": "skills/engineering-skills/slo-architect",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "63917f3e02caa905a9b81a5526f4d750780aa7049436f1cc56bfe43450c29afa"
+        },
+        {
+          "path": "assets/error_budget_policy.md",
+          "sha256": "14ad5e7d47c71b54e92f74ddf6b37e0f8ee7c8c3768631e3da06fd7106688cad"
+        },
+        {
+          "path": "assets/slo_template.yaml",
+          "sha256": "ac63ff04a88bd1997f0345df82c49a66987f1de5a065ee9c101d62b31b428ddd"
+        },
+        {
+          "path": "references/composition.md",
+          "sha256": "b90aca838c569a7320154d57daef94e404c1c01a8119fdcd8476dde8ecb24553"
+        },
+        {
+          "path": "references/error_budget.md",
+          "sha256": "51c73383061dd5c0f2284c94ca90fe1122c156151d04ae301ad437c820e7b042"
+        },
+        {
+          "path": "references/sli_design.md",
+          "sha256": "9a3015a3e4e1499bbff56e29aec39fcbc94628453d076295a16445899ac92a47"
+        },
+        {
+          "path": "references/slo_principles.md",
+          "sha256": "5a99f431d9d62bee701c60bf4d2968ec4bb183455a4a1bc4c3a354af24640cf7"
+        },
+        {
+          "path": "scripts/error_budget_calculator.py",
+          "sha256": "d21930618cee371cbc5c13153e09bc69a7222b9c7eea626810b5c2a13fd6351f"
+        },
+        {
+          "path": "scripts/slo_designer.py",
+          "sha256": "c38b441e43839cfbc862de4f40d99c5a25b9efa9960f6a32f74a3e91503b9f25"
+        },
+        {
+          "path": "scripts/slo_review.py",
+          "sha256": "243c97cf84c33253df1d37c71b6bec0638607bd828108c84705beb9ceb6652d1"
+        }
+      ]
+    },
+    {
+      "name": "spec-driven-workflow",
+      "sourcePath": "skills/engineering-skills/spec-driven-workflow",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "9b20cbe6c9f08bd6c8d63ed5f57249cc4945a0a86c899312b8fa6a10968acb38"
+        },
+        {
+          "path": "references/acceptance_criteria_patterns.md",
+          "sha256": "63c7f023c2138558b2b135bbd2c3a454bff0ac0347cee31de10b631cc110660e"
+        },
+        {
+          "path": "references/bounded_autonomy_rules.md",
+          "sha256": "f590fd8d685ef9dace4dd1a72808815b4cca25163b0cbf340e42f923f2f001c0"
+        },
+        {
+          "path": "references/spec_format_guide.md",
+          "sha256": "6625e272fe216dbf7e673c0da925c77bf6a55bb366321126a0829dfc0f52ed19"
+        },
+        {
+          "path": "scripts/spec_generator.py",
+          "sha256": "28ef547c2c88c4449654e3ea1920b68c802ee79ec8fb5c3c3e0261dbc24c68c1"
+        },
+        {
+          "path": "scripts/spec_validator.py",
+          "sha256": "b468c0417a4f3285a12e4cd502daf5eaa4430c64796255f31de4c621f8c576a4"
+        },
+        {
+          "path": "scripts/test_extractor.py",
+          "sha256": "df459a7528dd4787f8b3111fce789620331aa42c690c6de9258667f4b7ca4fc7"
+        }
+      ]
+    },
+    {
+      "name": "tdd-guide",
+      "sourcePath": "skills/engineering-skills/tdd-guide",
+      "files": [
+        {
+          "path": "HOW_TO_USE.md",
+          "sha256": "1257c94e7f8b1b06da85a11db49d3894fa76a7e633c24a17444612f88999fa65"
+        },
+        {
+          "path": "README.md",
+          "sha256": "0d17c8ff5780c371d76a9e5caf026f145b007e0163fce4c6b5775c25df9cbc27"
+        },
+        {
+          "path": "SKILL.md",
+          "sha256": "b12e75f376db6a72d0f5a9971c720c04546d02f0ecf68f40fd0efde22e46aa6d"
+        },
+        {
+          "path": "assets/expected_output.json",
+          "sha256": "03a146673c9743856f80654c27d1d9294f5c795d88b02901a305c0b8e49c7eb6"
+        },
+        {
+          "path": "assets/sample_coverage_report.lcov",
+          "sha256": "5d884784dcf4a2c1a952850194acc378c2018a75f2dff428ba28b13096b47d1c"
+        },
+        {
+          "path": "assets/sample_input_python.json",
+          "sha256": "be90a513e0a6cdf6db21bf89177421b3eeb6f53d642e3b13276c3c6ad7e537d0"
+        },
+        {
+          "path": "assets/sample_input_typescript.json",
+          "sha256": "5dee32466f71080736418ad3a36d252d6f5b117df975ba682463688ce8e9128f"
+        },
+        {
+          "path": "references/ci-integration.md",
+          "sha256": "47cfd82bd0287c9fc6cadd6bec35459571a2af162d3449a54bdd41e808949080"
+        },
+        {
+          "path": "references/framework-guide.md",
+          "sha256": "1a4370676a8543aa7e4e6305a72ce164b8c5a921104112fac996d7c1a3f35466"
+        },
+        {
+          "path": "references/tdd-best-practices.md",
+          "sha256": "ee7a8aaaf9381692e7b4d03b111c8300e6217a65f0a9effa7817d2cb9703a2d5"
+        },
+        {
+          "path": "scripts/coverage_analyzer.py",
+          "sha256": "1da0290c739634b4da7f6e1515e5e11bc70cb9060cc67dde4c2c50b6777fd5e4"
+        },
+        {
+          "path": "scripts/fixture_generator.py",
+          "sha256": "8ee81d35b6a72fc768038e30c0ef7b997c57165b5c428ef45b9aef1cd9fc5f0a"
+        },
+        {
+          "path": "scripts/format_detector.py",
+          "sha256": "a12f1d016967fc0a8a3b3f68b28a172494c33c9252d72d662c7a37f765a6692d"
+        },
+        {
+          "path": "scripts/framework_adapter.py",
+          "sha256": "03a189d01310f04cb025bb9498ecd6bdc7d16eef119e992ff513774939299c58"
+        },
+        {
+          "path": "scripts/metrics_calculator.py",
+          "sha256": "8080b0daa70cb38114cf7937e3e8f942cef99b81db3fdd786e1ca44350bd57a8"
+        },
+        {
+          "path": "scripts/output_formatter.py",
+          "sha256": "e92a7559ae39c9b144a55b2dfaf6f14d9137a7e37aa9ee07adaf7c4c346b21fd"
+        },
+        {
+          "path": "scripts/tdd_workflow.py",
+          "sha256": "5048dda42125f9c95cd49dbf67816f5bc635fee0cc5938a74a4d1b59361f9095"
+        },
+        {
+          "path": "scripts/test_generator.py",
+          "sha256": "6ec26f0f29339ab23f0ff65fd140eaec143751759c7ddf360ada988059959346"
+        }
+      ]
+    }
+  ]
+}

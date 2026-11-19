@@ -28,6 +28,33 @@ RISK_PATTERNS = {
     "destructive filesystem command": re.compile(r"\brm\s+-rf\s+/(?:\s|$)"),
 }
 
+# Exact vendored fixtures remain byte-identical to their pinned manifests. Only
+# these visibly synthetic values are allowed; another matching value in the
+# same file remains a finding.
+ALLOWED_SYNTHETIC_MATCHES = {
+    (
+        Path("skills/api-design-reviewer/references/api_antipatterns.md"),
+        "generic bearer token",
+    ): {"Authorization: " + "Bearer jwt-token-with-context"},
+    (
+        Path("skills/api-design-reviewer/references/rest_design_rules.md"),
+        "generic bearer token",
+    ): {"Authorization: " + "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."},
+    **{
+        (Path(f"skills/code-reviewer/expected_outputs/{name}"), "local user path"): {
+            "/home/" + "user/"
+        }
+        for name in [
+            "sample_c_clean_quality.json",
+            "sample_c_smells_quality.json",
+            "sample_csharp_clean_quality.json",
+            "sample_csharp_smells_quality.json",
+            "sample_java_clean_quality.json",
+            "sample_java_smells_quality.json",
+        ]
+    },
+}
+
 
 def text_files(root: Path):
     for path in root.rglob("*"):
@@ -74,10 +101,14 @@ def audit(root: Path):
             continue
         rel = path.relative_to(root)
         for label, pattern in SECRET_PATTERNS.items():
-            if pattern.search(content):
+            matches = {match.group(0) for match in pattern.finditer(content)}
+            allowed = ALLOWED_SYNTHETIC_MATCHES.get((rel, label), set())
+            if matches - allowed:
                 critical.append((rel, label))
         for label, pattern in PRIVATE_PATTERNS.items():
-            if pattern.search(content):
+            matches = {match.group(0) for match in pattern.finditer(content)}
+            allowed = ALLOWED_SYNTHETIC_MATCHES.get((rel, label), set())
+            if matches - allowed:
                 critical.append((rel, label))
         for label, pattern in RISK_PATTERNS.items():
             if pattern.search(content):
